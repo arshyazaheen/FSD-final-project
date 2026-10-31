@@ -1,0 +1,17 @@
+{
+  "name": "vaultverse-mern",
+  "version": "1.0.0",
+  "description": "VaultVerse — AI-Powered Secure Personal Data Management and Privacy Protection System (MERN Stack)",
+  "private": true,
+  "scripts": {
+    "server:install": "npm install --prefix server",
+    "client:install": "npm install --prefix client",
+    "install:all": "npm run server:install && npm run client:install",
+    "server": "npm start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "test": "npm test --prefix server",
+    "build:client": "npm run build --prefix client"
+  }
+}
+

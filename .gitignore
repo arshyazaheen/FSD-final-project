@@ -1,0 +1,55 @@
+# ==============================================================================
+# VaultVerse Production Git Ignore Configuration
+# ==============================================================================
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Local Environment Variables & Secrets (CRITICAL - DO NOT COMMIT)
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+client/.env
+client/.env.*
+!client/.env.example
+
+# Build Outputs & Bundles
+dist/
+client/dist/
+build/
+.cache/
+
+# Headless Browser Caches & Test Profiles
+chrome-temp/
+.temp/
+*.pma
+
+# Local Database & Engine Runtime Files
+server/data/db/
+server/data/*.wt
+*.wt
+diagnostic.data/
+journal/
+mongod.lock
+
+# Ephemeral Encrypted Upload Files
+server/uploads/vault/*.enc
+!server/uploads/vault/.gitkeep
+!server/data/db/.gitkeep
+!server/validators/.gitkeep
+
+# System & Editor Artifacts
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/
+.idea/
+
